@@ -1,4 +1,9 @@
 {
-  "published": false,
-  "channel": "dev"
+  "published": true,
+  "channel": "dev",
+  "versionName": "1.17.40-dev4",
+  "build": 4,
+  "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev4.apk",
+  "changelogUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev4.md",
+  "sha256": "1b30500f00996abc37e328609c074bab34c837ad8039c55ebd27119669906f78"
 }
