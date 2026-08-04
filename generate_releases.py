@@ -32,23 +32,28 @@ def generate(channel: str) -> None:
         if not VERSION_PATTERN.fullmatch(version):
             raise ValueError(f"Unsupported version name: {version}")
         apk_path = channel_dir / "apk" / f"srceng-{version}.apk"
-        if not apk_path.is_file():
-            raise FileNotFoundError(f"Missing APK for {version}: {apk_path}")
+        apk: dict[str, object] | None = None
+        if apk_path.is_file():
+            apk_bytes = apk_path.read_bytes()
+            apk = {
+                "apkUrl": f"{RAW_BASE}/{channel}/apk/{apk_path.name}",
+                "apkSize": len(apk_bytes),
+                "sha256": hashlib.sha256(apk_bytes).hexdigest(),
+            }
 
         changelog = changelog_path.read_text(encoding="utf-8").strip()
-        apk_bytes = apk_path.read_bytes()
-        releases[version] = {
+        entry: dict[str, object] = {
             "versionName": version,
             "build": build_number(version, channel),
-            "apkUrl": f"{RAW_BASE}/{channel}/apk/{apk_path.name}",
-            "apkSize": len(apk_bytes),
-            "sha256": hashlib.sha256(apk_bytes).hexdigest(),
             "changelog": {
                 "format": "text/markdown",
                 "url": f"{RAW_BASE}/{channel}/changelog/{changelog_path.name}",
                 "content": changelog,
             },
         }
+        if apk is not None:
+            entry.update(apk)
+        releases[version] = entry
 
     ordered = dict(sorted(releases.items(), key=lambda item: int(item[1]["build"]), reverse=True))
     latest = manifest.get("versionName") if manifest.get("published", False) else None

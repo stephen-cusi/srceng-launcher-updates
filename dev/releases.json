@@ -6,33 +6,30 @@
     "1.17.40-dev13": {
       "versionName": "1.17.40-dev13",
       "build": 13,
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev13.apk",
-      "apkSize": 84403494,
-      "sha256": "7c9a150496cb64ff58929c1f65c9ecff37c5dd09c6076ac42397dfd5d2146a5d",
       "changelog": {
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev13.md",
         "content": "# 1.17.40-dev13\n\n## 测试说明\n\n- 本版本仅用于测试更新日志按版本读取功能。\n- 若你当前安装的是 1.17.40-dev12，在\"查看更新日志\"中应看到 dev12 的更新说明，而不是本版本（dev13）的说明。"
-      }
+      },
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev13.apk",
+      "apkSize": 84403494,
+      "sha256": "7c9a150496cb64ff58929c1f65c9ecff37c5dd09c6076ac42397dfd5d2146a5d"
     },
     "1.17.40-dev12": {
       "versionName": "1.17.40-dev12",
       "build": 12,
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev12.apk",
-      "apkSize": 84403490,
-      "sha256": "ca8a485a5e6b1b62f74818a266fc2ebccf2c4fc8c55e346e460ce2c2c233a5b6",
       "changelog": {
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev12.md",
         "content": "# 1.17.40-dev12\n\n## 主要更新\n\n- 更新日志改为按当前安装版本显示，旧版本用户可查看自己版本的更新说明，不再总是显示最新版本日志。\n- 完善文件管理器多选操作：全选后取消勾选不再退出多选模式，选择操作栏保持显示但无选中时禁用按钮。\n- 修复多选时选中条目自动滚动定位，避免点选后条目被顶出屏幕。\n- 改进启动器交互与归档解压流程，完善 Material 3 界面图标与布局。\n- 改进目录选择界面与签名构建脚本，新增分辨率预设。\n- 优化设置界面与更新检查逻辑。"
-      }
+      },
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev12.apk",
+      "apkSize": 84403490,
+      "sha256": "ca8a485a5e6b1b62f74818a266fc2ebccf2c4fc8c55e346e460ce2c2c233a5b6"
     },
     "1.17.40-dev11": {
       "versionName": "1.17.40-dev11",
       "build": 11,
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev11.apk",
-      "apkSize": 84373600,
-      "sha256": "43252d5c80ae1b5c9a1d998b5795c824595d1f242aa43796f28176ab016269e3",
       "changelog": {
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev11.md",
@@ -42,9 +39,6 @@
     "1.17.40-dev10": {
       "versionName": "1.17.40-dev10",
       "build": 10,
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev10.apk",
-      "apkSize": 84273995,
-      "sha256": "21d1a858e75aeb7de3714bf7b8a9f4f36c07ba1ce4c0d9282d2a92fb44c9e7f3",
       "changelog": {
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev10.md",
@@ -54,9 +48,6 @@
     "1.17.40-dev9": {
       "versionName": "1.17.40-dev9",
       "build": 9,
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev9.apk",
-      "apkSize": 90932644,
-      "sha256": "660e7ecc2203df404128219b2b8695f3eb87b2dedd031e7eebb740fa312abc42",
       "changelog": {
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev9.md",
@@ -66,9 +57,6 @@
     "1.17.40-dev8": {
       "versionName": "1.17.40-dev8",
       "build": 8,
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev8.apk",
-      "apkSize": 21433520,
-      "sha256": "a46ac8978772c896336c16148e14a21b6ffeb1a413d26fe19667a822fa5147d2",
       "changelog": {
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev8.md",
@@ -78,9 +66,6 @@
     "1.17.40-dev6": {
       "versionName": "1.17.40-dev6",
       "build": 6,
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev6.apk",
-      "apkSize": 15261807,
-      "sha256": "4a8000581c4163fe576f10489904650eb192a513e661a145f7ed51c4e8f2f6be",
       "changelog": {
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev6.md",
@@ -90,9 +75,6 @@
     "1.17.40-dev5": {
       "versionName": "1.17.40-dev5",
       "build": 5,
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev5.apk",
-      "apkSize": 15253035,
-      "sha256": "5678805ed110264b7d1c968e5ec0e4cc9a7bfa3b56c6984b35ebaf33208ea171",
       "changelog": {
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev5.md",
@@ -102,9 +84,6 @@
     "1.17.40-dev4": {
       "versionName": "1.17.40-dev4",
       "build": 4,
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev4.apk",
-      "apkSize": 15248515,
-      "sha256": "1b30500f00996abc37e328609c074bab34c837ad8039c55ebd27119669906f78",
       "changelog": {
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev4.md",
