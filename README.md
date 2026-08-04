@@ -5,13 +5,21 @@ Public update feed for `stephen-cusi/srceng-launcher_cn`.
 ## Layout
 
 - `stable/manifest.json`: latest stable release metadata
+- `stable/releases.json`: all stable releases indexed by exact version name
 - `stable/apk/`: stable APK files
 - `stable/changelog/`: one Markdown changelog per stable version
 - `dev/manifest.json`: latest development release metadata
+- `dev/releases.json`: all development releases indexed by exact version name
 - `dev/apk/`: development APK files
 - `dev/changelog/`: one Markdown changelog per development version
 
-The launcher reads only each channel's `manifest.json`. Older APKs and changelogs remain available at their versioned paths.
+The launcher reads each channel's `manifest.json` to check for a newer release. It reads `releases.json` to look up the changelog for the exact installed `versionName`, so older installations continue to show their own release notes after a newer version is published. Older APKs and changelogs remain available at their versioned paths.
+
+`releases.json` embeds every Markdown changelog under `releasesByVersion.<versionName>.changelog.content` and also retains the direct Markdown URL. Regenerate both channel indexes with:
+
+```bash
+./generate_releases.py
+```
 
 ## Publishing
 
@@ -29,4 +37,4 @@ Use one monotonically increasing build sequence across both channels. For exampl
 
 Set the launcher's `res/values/build_info.xml` `update_build` value to the same build number before compiling the APK.
 
-Commit and push the generated APK, changelog, and manifest together.
+`publish.sh` regenerates both `releases.json` files automatically. Commit and push the generated APK, changelog, manifest, and release indexes together.

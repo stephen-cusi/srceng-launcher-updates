@@ -20,6 +20,10 @@ if ! [[ "$BUILD" =~ ^[0-9]+$ ]]; then
     echo "Build must be a non-negative integer" >&2
     exit 1
 fi
+if ! [[ "$VERSION" =~ ^[0-9A-Za-z][0-9A-Za-z._+-]*$ ]]; then
+    echo "Version name contains unsupported characters" >&2
+    exit 1
+fi
 if [ ! -f "$APK" ] || [ ! -f "$CHANGELOG" ]; then
     echo "APK and changelog files must exist" >&2
     exit 1
@@ -45,4 +49,6 @@ cat > "$ROOT/$CHANNEL/manifest.json" <<EOF
 }
 EOF
 
-echo "Published metadata for $CHANNEL $VERSION (build $BUILD)"
+python3 "$ROOT/generate_releases.py"
+
+echo "Published metadata and release history for $CHANNEL $VERSION (build $BUILD)"

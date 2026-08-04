@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "channel": "dev",
+  "latestVersionName": "1.17.40-dev11",
+  "releasesByVersion": {
+    "1.17.40-dev11": {
+      "versionName": "1.17.40-dev11",
+      "build": 11,
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev11.apk",
+      "apkSize": 84373600,
+      "sha256": "43252d5c80ae1b5c9a1d998b5795c824595d1f242aa43796f28176ab016269e3",
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev11.md",
+        "content": "# 1.17.40-dev11\n\n## 主要更新\n\n- 新增 VPK 和 GMA 文件管理器，支持文件浏览、复制、移动和删除。\n- 支持创建 VPK1/VPK2，以及浏览和选择性解压 VPK 文件。\n- 支持浏览和选择性解包由 gmad 等工具创建的 GMA 文件，并校验归档与文件 CRC32。\n- 增加归档覆盖确认、危险路径防护、文件类型图标和触摸交互动画。\n- 修复长按选择偏移、目录返回位置丢失、打开归档时界面抖动等问题。"
+      }
+    },
+    "1.17.40-dev10": {
+      "versionName": "1.17.40-dev10",
+      "build": 10,
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev10.apk",
+      "apkSize": 84273995,
+      "sha256": "21d1a858e75aeb7de3714bf7b8a9f4f36c07ba1ce4c0d9282d2a92fb44c9e7f3",
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev10.md",
+        "content": "# 1.17.40-dev10\n\n## 主要更新\n\n- 改进启动器设置界面，并统一设置选择器样式。\n- 优化更新清单获取策略，降低旧缓存导致更新检测失败的概率。\n- 将启动器原生初始化桥接迁移到 Kotlin，完善 Kotlin 重写。"
+      }
+    },
+    "1.17.40-dev9": {
+      "versionName": "1.17.40-dev9",
+      "build": 9,
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev9.apk",
+      "apkSize": 90932644,
+      "sha256": "660e7ecc2203df404128219b2b8695f3eb87b2dedd031e7eebb740fa312abc42",
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev9.md",
+        "content": "# 1.17.40-dev9\n\n## 主要更新\n\n- 在 APK 中补齐 ARM64 和 ARMv7 的完整原生引擎库。\n- 恢复原生库安装时解压，确保重装后引擎能从应用原生库目录启动。\n- 安全处理录音权限拒绝，并修正刘海屏显示模式常量。"
+      }
+    },
+    "1.17.40-dev8": {
+      "versionName": "1.17.40-dev8",
+      "build": 8,
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev8.apk",
+      "apkSize": 21433520,
+      "sha256": "a46ac8978772c896336c16148e14a21b6ffeb1a413d26fe19667a822fa5147d2",
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev8.md",
+        "content": "# 1.17.40-dev8\n\n## 主要更新\n\n- 使用 Kotlin 重写启动器界面、设置、更新、资源提取和主题逻辑。\n- 构建系统迁移到 Gradle Wrapper、Android Gradle Plugin 和 Kotlin DSL。\n- 接入官方 Material 3 DayNight 主题与 Material Components 控件。\n- 保留自定义主题色、深色模式、动态壁纸取色和实时预览。\n- 在“关于”页面新增现代化重写说明，并补齐多语言翻译。\n- 启动按钮改为更明显的胶囊圆角样式。\n- 最低系统版本调整为 Android 7.0（API 24）。\n- SDL、音频、控制器和原生兼容层继续保留 Java 实现，避免影响引擎行为。\n\n## 构建信息\n\n- `minSdk`: 24\n- `targetSdk`: 29\n- `compileSdk`: 34\n- Material Components: 1.12.0"
+      }
+    },
+    "1.17.40-dev6": {
+      "versionName": "1.17.40-dev6",
+      "build": 6,
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev6.apk",
+      "apkSize": 15261807,
+      "sha256": "4a8000581c4163fe576f10489904650eb192a513e661a145f7ed51c4e8f2f6be",
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev6.md",
+        "content": "# 1.17.40-dev6\n\n补齐更新功能的多语言翻译。\n\n- 新增繁体中文更新与镜像界面翻译。\n- 新增俄语、日语、韩语更新与镜像界面翻译。\n- 新增法语、德语、西班牙语更新与镜像界面翻译。\n- 包含 dev5 的下载镜像选择、自动回退和一键测速功能。"
+      }
+    },
+    "1.17.40-dev5": {
+      "versionName": "1.17.40-dev5",
+      "build": 5,
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev5.apk",
+      "apkSize": 15253035,
+      "sha256": "5678805ed110264b7d1c968e5ec0e4cc9a7bfa3b56c6984b35ebaf33208ea171",
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev5.md",
+        "content": "# 1.17.40-dev5\n\n新增更新下载镜像功能。\n\n- 增加自动选择、GitHub Raw、jsDelivr 系列和 GitHub 代理下载源。\n- 自动模式优先尝试镜像，失败后回退 GitHub。\n- 增加一键镜像测试，并用绿色或红色显示 APK 是否可下载。\n- 镜像测试仅读取 APK 文件头，不会下载完整安装包。"
+      }
+    },
+    "1.17.40-dev4": {
+      "versionName": "1.17.40-dev4",
+      "build": 4,
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev4.apk",
+      "apkSize": 15248515,
+      "sha256": "1b30500f00996abc37e328609c074bab34c837ad8039c55ebd27119669906f78",
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev4.md",
+        "content": "# 1.17.40-dev4\n\n更新功能测试版本。\n\n- 新增稳定版与开发版更新渠道。\n- 支持在应用内读取版本清单和更新日志。\n- 支持自定义 RGB 与十六进制主题色。\n- 扩展主题预设颜色。"
+      }
+    }
+  }
+}
