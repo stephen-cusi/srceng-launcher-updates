@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "channel": "dev",
-  "latestVersionName": "1.17.40-dev12",
+  "latestVersionName": "1.17.40-dev13",
   "releasesByVersion": {
+    "1.17.40-dev13": {
+      "versionName": "1.17.40-dev13",
+      "build": 13,
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev13.apk",
+      "apkSize": 84403494,
+      "sha256": "7c9a150496cb64ff58929c1f65c9ecff37c5dd09c6076ac42397dfd5d2146a5d",
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev13.md",
+        "content": "# 1.17.40-dev13\n\n## 测试说明\n\n- 本版本仅用于测试更新日志按版本读取功能。\n- 若你当前安装的是 1.17.40-dev12，在\"查看更新日志\"中应看到 dev12 的更新说明，而不是本版本（dev13）的说明。"
+      }
+    },
     "1.17.40-dev12": {
       "versionName": "1.17.40-dev12",
       "build": 12,
