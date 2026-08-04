@@ -1,9 +1,9 @@
 {
   "published": true,
   "channel": "dev",
-  "versionName": "1.17.40-dev11",
-  "build": 11,
-  "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev11.apk",
-  "changelogUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev11.md",
-  "sha256": "43252d5c80ae1b5c9a1d998b5795c824595d1f242aa43796f28176ab016269e3"
+  "versionName": "1.17.40-dev12",
+  "build": 12,
+  "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev12.apk",
+  "changelogUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev12.md",
+  "sha256": "ca8a485a5e6b1b62f74818a266fc2ebccf2c4fc8c55e346e460ce2c2c233a5b6"
 }

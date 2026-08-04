@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "channel": "dev",
-  "latestVersionName": "1.17.40-dev11",
+  "latestVersionName": "1.17.40-dev12",
   "releasesByVersion": {
+    "1.17.40-dev12": {
+      "versionName": "1.17.40-dev12",
+      "build": 12,
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev12.apk",
+      "apkSize": 84403490,
+      "sha256": "ca8a485a5e6b1b62f74818a266fc2ebccf2c4fc8c55e346e460ce2c2c233a5b6",
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev12.md",
+        "content": "# 1.17.40-dev12\n\n## 主要更新\n\n- 更新日志改为按当前安装版本显示，旧版本用户可查看自己版本的更新说明，不再总是显示最新版本日志。\n- 完善文件管理器多选操作：全选后取消勾选不再退出多选模式，选择操作栏保持显示但无选中时禁用按钮。\n- 修复多选时选中条目自动滚动定位，避免点选后条目被顶出屏幕。\n- 改进启动器交互与归档解压流程，完善 Material 3 界面图标与布局。\n- 改进目录选择界面与签名构建脚本，新增分辨率预设。\n- 优化设置界面与更新检查逻辑。"
+      }
+    },
     "1.17.40-dev11": {
       "versionName": "1.17.40-dev11",
       "build": 11,
