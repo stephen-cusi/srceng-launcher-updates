@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "channel": "dev",
-  "latestVersionName": "1.17.40-dev13",
+  "latestVersionName": "1.17.40-dev14",
   "releasesByVersion": {
+    "1.17.40-dev14": {
+      "versionName": "1.17.40-dev14",
+      "build": 14,
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev14.md",
+        "content": "# 1.17.40-dev14\n\n## 主要更新\n\n### 日志查看器\n\n- 重构 `engine.log` 查看器，新增源文件行号、日志等级筛选、错误与警告着色。\n- 新增跳转到指定行、清空日志、自动换行和日志高亮开关。\n- 修复指定行跳转后位置被布局或焦点恢复覆盖的问题。\n- 修复重新进入日志查看器时总是停在末尾的问题；首次进入现在从顶部开始，手动滚到底部后仍会自动跟随新日志。\n- 优化日志查看器的 Material 3 顶栏、文件信息栏和多语言文本。\n\n### 主题与界面\n\n- Android 12 及以上版本的动态取色改用系统 Material You 配色。\n- 新增 AMOLED 纯黑深色主题选项。\n- 更新日志支持 Markdown 排版显示。\n- SDL 错误、消息和引擎验证弹窗统一使用 Material 3 布局与按钮样式。\n\n### 文件管理器\n\n- 普通文件管理模式新增 `..` 父目录入口，返回上级目录更直接。\n- 文件和目录详情新增最后修改时间。\n\n### 更新日志\n\n- 延续 dev13 的按已安装版本读取更新日志功能，旧版本不再错误显示最新版本说明。"
+      },
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev14.apk",
+      "apkSize": 84523364,
+      "sha256": "6c641ba49d8becf7acea29e9b53718da53070c48a99a492d7eaa0acc303bea32"
+    },
     "1.17.40-dev13": {
       "versionName": "1.17.40-dev13",
       "build": 13,
@@ -22,10 +34,7 @@
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev12.md",
         "content": "# 1.17.40-dev12\n\n## 主要更新\n\n- 更新日志改为按当前安装版本显示，旧版本用户可查看自己版本的更新说明，不再总是显示最新版本日志。\n- 完善文件管理器多选操作：全选后取消勾选不再退出多选模式，选择操作栏保持显示但无选中时禁用按钮。\n- 修复多选时选中条目自动滚动定位，避免点选后条目被顶出屏幕。\n- 改进启动器交互与归档解压流程，完善 Material 3 界面图标与布局。\n- 改进目录选择界面与签名构建脚本，新增分辨率预设。\n- 优化设置界面与更新检查逻辑。"
-      },
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev12.apk",
-      "apkSize": 84403490,
-      "sha256": "ca8a485a5e6b1b62f74818a266fc2ebccf2c4fc8c55e346e460ce2c2c233a5b6"
+      }
     },
     "1.17.40-dev11": {
       "versionName": "1.17.40-dev11",
