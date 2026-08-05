@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "channel": "dev",
-  "latestVersionName": "1.17.40-dev14",
+  "latestVersionName": "1.17.40-dev15",
   "releasesByVersion": {
+    "1.17.40-dev15": {
+      "versionName": "1.17.40-dev15",
+      "build": 15,
+      "changelog": {
+        "format": "text/markdown",
+        "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev15.md",
+        "content": "# 1.17.40-dev15\n\n## 主要更新\n\n### 修复已知问题\n\n- **修复游戏内分辨率被强制还原的问题**：设置新增「默认（跟随游戏内设置）」分辨率选项。此前使用「本机分辨率」时启动器会在每次启动强制传入 `-w/-h`，导致游戏内修改的分辨率下次启动被复原；选择默认选项后不再传入分辨率参数，完全跟随游戏内设置。\n- **修复国内网络下更新检查慢/卡顿的问题**：更新检查和更新日志获取现在会并行探测全部镜像源并自动使用最快可用源，GitHub Raw 访问过慢或超时时自动切换到 jsDelivr / gh-proxy 等国内可达镜像；元数据来自哪个镜像，APK 下载就走哪个镜像的链接。\n- **修复改分辨率后首次启动偶发闪退**：原生引擎库整体更换为精简发布版（与官方 v1.17.26 同源），并同步官方渲染栈相关修复，减小 APK 体积约 24%。\n\n### 其他\n\n- 原生库更换为已 strip 的发布版构建，APK 体积由约 84MB 降至约 64MB。"
+      },
+      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev15.apk",
+      "apkSize": 63834216,
+      "sha256": "9892fedcb0b786b78809b9183efc38f1df76ba3d9e0906b00d6ae76415e3d6e8"
+    },
     "1.17.40-dev14": {
       "versionName": "1.17.40-dev14",
       "build": 14,
@@ -22,10 +34,7 @@
         "format": "text/markdown",
         "url": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/changelog/1.17.40-dev13.md",
         "content": "# 1.17.40-dev13\n\n## 测试说明\n\n- 本版本仅用于测试更新日志按版本读取功能。\n- 若你当前安装的是 1.17.40-dev12，在\"查看更新日志\"中应看到 dev12 的更新说明，而不是本版本（dev13）的说明。"
-      },
-      "apkUrl": "https://raw.githubusercontent.com/stephen-cusi/srceng-launcher-updates/main/dev/apk/srceng-1.17.40-dev13.apk",
-      "apkSize": 84403494,
-      "sha256": "7c9a150496cb64ff58929c1f65c9ecff37c5dd09c6076ac42397dfd5d2146a5d"
+      }
     },
     "1.17.40-dev12": {
       "versionName": "1.17.40-dev12",
